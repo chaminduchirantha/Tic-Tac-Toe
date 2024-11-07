@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.assignment.tictactoe.service.tictactoe.Controller.BoaredUiController">
+   <children>
+      <GridPane gridLinesVisible="true" layoutX="171.8" layoutY="60.0" prefHeight="245.0" prefWidth="265.0" AnchorPane.bottomAnchor="95.19999999999999" AnchorPane.leftAnchor="171.8" AnchorPane.rightAnchor="163.40000000000003" AnchorPane.topAnchor="60.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="89.4000244140625" minWidth="10.0" prefWidth="76.80001220703124" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="89.4000244140625" minWidth="10.0" prefWidth="82.39998779296874" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.4000244140625" minWidth="10.0" prefWidth="70.800048828125" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="80.80000610351563" minHeight="10.0" prefHeight="80.00001831054688" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="79.99998779296875" minHeight="10.0" prefHeight="75.19998168945311" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="81.59998168945313" minHeight="10.0" prefHeight="70.40001220703127" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btn2" mnemonicParsing="false" onAction="#ActionTwo" prefHeight="82.0" prefWidth="110.0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+            <Button fx:id="btn3" mnemonicParsing="false" onAction="#ActionThree" prefHeight="82.0" prefWidth="107.0" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+            <Button fx:id="btn4" mnemonicParsing="false" onAction="#ActionFour" prefHeight="85.0" prefWidth="90.0" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+            <Button fx:id="btn5" mnemonicParsing="false" onAction="#ActionFive" prefHeight="78.0" prefWidth="122.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+            <Button fx:id="btn6" mnemonicParsing="false" onAction="#ActionSix" prefHeight="84.0" prefWidth="86.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+            <Button fx:id="btn7" mnemonicParsing="false" onAction="#ActionSeven" prefHeight="89.0" prefWidth="90.0" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+            <Button fx:id="btn8" mnemonicParsing="false" onAction="#ActionEight" prefHeight="81.0" prefWidth="102.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+            <Button fx:id="btn9" mnemonicParsing="false" onAction="#ActionNine" prefHeight="83.0" prefWidth="86.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+            <Button fx:id="btn1" layoutX="130.0" layoutY="148.0" mnemonicParsing="false" onAction="#ActionOne" prefHeight="82.0" prefWidth="98.0">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+      <Label fx:id="lblWinner" layoutX="182.0" layoutY="334.0" prefHeight="44.0" prefWidth="122.0" text="Winner Is : -">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <Button fx:id="btnReset" layoutX="361.0" layoutY="341.0" mnemonicParsing="false" onAction="#actionOnReset" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #f1c40f;" text="Reset">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
